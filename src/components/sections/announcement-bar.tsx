@@ -31,7 +31,7 @@ const AnnouncementBar = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50 w-full bg-[#ffb9cd] border-b border-[#9C1C26]/30 py-1.5 px-4 shadow-[0_4px_20px_rgba(0,0,0,0.3)] backdrop-blur-md">
+    <div className="sticky top-0 z-50 w-full bg-[#cc0000] border-b border-[#9C1C26]/30 py-1.5 px-4 shadow-[0_4px_20px_rgba(0,0,0,0.3)] backdrop-blur-md">
       {/* Sparkle Icons Overlay */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-20">
         <Sparkles 
@@ -50,31 +50,31 @@ const AnnouncementBar = () => {
         <div className="flex items-center justify-center gap-3">
             <div className="flex items-center justify-center gap-2 text-center">
               <Clock 
-                className="w-3.5 h-3.5 text-[#000000] animate-pulse shrink-0" 
+                className="w-3.5 h-3.5 text-[#ffffff] animate-pulse shrink-0" 
                 strokeWidth={2.5}
               />
-              <p className="text-[#000000] text-[12px] font-bold tracking-tight text-center">
+              <p className="text-[#ffffff] text-[12px] font-bold tracking-tight text-center">
                 You have{" "}
-                <span className="text-[#000000] tabular-nums font-black">
+                <span className="text-[#ffffff] tabular-nums font-black">
                   {formatTime(timeLeft)}
                 </span>{" "}
-                minutes left to unlock your Crumbl reward
+                minutes left to unlock your Target reward
               </p>
             </div>
         </div>
 
         {/* Bottom Row: Subtext with decorative lines */}
         <div className="flex items-center gap-2 mt-0.5">
-          <div className="h-[1px] w-4 bg-[#000000]"></div>
-          <p className="text-[#000000] text-[9px] uppercase tracking-[0.15em] font-bold">
+          <div className="h-[1px] w-4 bg-[#ffffff]"></div>
+          <p className="text-[#ffffff] text-[9px] uppercase tracking-[0.15em] font-bold">
             Complete the steps before access expires
           </p>
-          <div className="h-[1px] w-4 bg-[#000000]"></div>
+          <div className="h-[1px] w-4 bg-[#ffffff]"></div>
         </div>
       </div>
 
       {/* Shimmering Bottom Border Accent */}
-      <div className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-transparent via-[#9C1C26] to-transparent w-full opacity-50 overflow-hidden">
+      <div className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-transparent via-[#000000] to-transparent w-full opacity-50 overflow-hidden">
         <div className="absolute inset-0 bg-white/20 animate-shine"></div>
       </div>
     </div>
